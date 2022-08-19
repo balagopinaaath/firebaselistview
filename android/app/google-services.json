@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "738102717288",
+    "project_id": "listcategory-944e4",
+    "storage_bucket": "listcategory-944e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738102717288:android:e56a871a17a2f3be4944dd",
+        "android_client_info": {
+          "package_name": "com.venzo.firecategory"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738102717288-p85tg1brc7u0m7eef7rq0tphkkh84ejk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.venzo.firecategory",
+            "certificate_hash": "e0a53498a4a88028ddf2d63a307024e29fcc864b"
+          }
+        },
+        {
+          "client_id": "738102717288-pd5m7st1cquqeqc1e5jh5fcf180suq0c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALUq8Y36jtrgtZT5agfYntd4thnLs9koU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "738102717288-pd5m7st1cquqeqc1e5jh5fcf180suq0c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
