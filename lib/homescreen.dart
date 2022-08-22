@@ -141,7 +141,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         itemBuilder: (context, index) {
                           var data = snapshots.data!.docs[index].data()
                               as Map<String, dynamic>;
-                          if (title.isNotEmpty) {
+                          if (title.isEmpty && title.isNotEmpty) {
                             print('object');
                             return ListTile(
                               title: Text(
@@ -149,12 +149,14 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                               leading: CircleAvatar(
                                 radius: 25,
-                                backgroundColor:
-                                    Color(int.parse(data['color'])),
+                                backgroundColor: Color(
+                                  int.parse(data['color']),
+                                ),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(30),
-                                  child: Image.asset(data[
-                                      'image']), //child: Image.asset(data['image']),
+                                  child: Image.asset(
+                                    data['image'],
+                                  ), //child: Image.asset(data['image']),
                                 ),
                               ),
                             );
@@ -164,7 +166,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               .toString()
                               .toLowerCase()
                               .startsWith(title.toLowerCase()))
-                            print('object');
+                          // print('object');
                           {
                             return ListTile(
                               title: Text(
@@ -183,7 +185,9 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                             );
                           }
-                          return Center(child: CircularProgressIndicator());
+                          return Center(
+                            child: CircularProgressIndicator(),
+                          );
                         },
                       );
               },
