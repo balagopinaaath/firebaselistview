@@ -134,7 +134,7 @@ class _HomeScreenState extends State<HomeScreen> {
               builder: (context, snapshots) {
                 return (snapshots.connectionState == ConnectionState.waiting)
                     ? Center(
-                        child: CircularProgressIndicator(),
+                        child: CircularProgressIndicator(color: Colors.red,),
                       )
                     : ListView.builder(
                         itemCount: snapshots.data!.docs.length,
@@ -185,9 +185,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                             );
                           }
-                          return Center(
-                            child: CircularProgressIndicator(),
-                          );
+                          return Container();   //Center(child: CircularProgressIndicator(color: Colors.orange,));
                         },
                       );
               },
